@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-4">
+    <h2>Leaderboard</h2>
+    <p>See how you rank among other first aid trainees</p>
+    <div class="row">
+        <div class="col-md-8">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Level</th>
+                        <th>Points</th>
+                        <th>Achievements</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>🥇 #1</td>
+                        <td>Sarah Johnson</td>
+                        <td><span class="badge bg-success">Advanced</span></td>
+                        <td>2500</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>🥈 #2</td>
+                        <td>Michael Chen</td>
+                        <td><span class="badge bg-success">Advanced</span></td>
+                        <td>2100</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>🥉 #3</td>
+                        <td>Emma Davis</td>
+                        <td><span class="badge bg-warning">Intermediate</span></td>
+                        <td>1800</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Right Side: Your Stats -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Your Stats</h5>
+                    <p>Current Rank:<br> <strong>#4</strong></p>
+                   
+                    <p>Points to Next Rank:<br> <strong>300</strong></p>
+                    <p>Weekly Progress:</p>
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" style="width: 50%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
