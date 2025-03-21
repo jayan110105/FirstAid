@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Dashboard</title>
+    <!--connect bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+
+        <!--cards in striped layout-->
+        <div class="card p-3 mb-4">
+            <h4>Profile</h4>
+            <p>Your training progress and achievements</p>
+            <table class="table table-striped">
+                <tr><th>Level</th><td>Beginner</td></tr>
+                <tr><th>Total Points</th><td>0</td></tr>
+                <tr><th>Completed Modules</th><td>0</td></tr>
+                <tr><th>Achievements</th><td>0</td></tr>
+            </table>
+        </div>
+
+        <!--cards in grid layout, col-md-3 shows 3/12 so that 4 cards can fit in a row-->
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-center p-3">
+                    <h6 class="text-danger">Current Level</h6>
+                    <h5 class="fw-bold">Beginner</h5>
+                    <p class="text-muted">Keep training to advance</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center p-3">
+                    <h6 class="text-warning">Total Points</h6>
+                    <h5 class="fw-bold">0</h5>
+                    <p class="text-muted">Points earned from training</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center p-3">
+                    <h6 class="text-primary">Time Spent</h6>
+                    <h5 class="fw-bold">2.5 hrs</h5>
+                    <p class="text-muted">Total training time</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center p-3">
+                    <h6 class="text-success">Accuracy</h6>
+                    <h5 class="fw-bold">92%</h5>
+                    <p class="text-muted">Average quiz score</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Bootstrap's list groups inside a card-->
+
+    <div class="container mt-4">
+        <h4>Recent Activity</h4>
+        <div class="card p-3">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="text-success fw-bold">✅ Achievement Unlocked: First Steps</span><br>
+                        <small>Completed your first training module</small>
+                    </div>
+                    <span class="text-muted">2 days ago</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="text-primary fw-bold">📘 Completed Module: Basic Life Support</span><br>
+                        <small>Score: 90%</small>
+                    </div>
+                    <span class="text-muted">3 days ago</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <span class="text-warning fw-bold">⚡ Achievement Unlocked: Quick Thinker</span><br>
+                        <small>Completed a scenario in under 2 minutes</small>
+                    </div>
+                    <span class="text-muted">5 days ago</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+    <!--cards in grid layout, row-cols-2 so that 2 cards can fit in a row side by side-->
+
+    <div class="container mt-4 mb-5">
+        <h4>Certificates</h4>
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+            <!-- Certificate 1 -->
+            <div class="col">
+                <div class="card text-black bg-certs p-3">
+                    <h5 class="fw-bold">Basic Life Support</h5>
+                    <p>Certified First Responder</p>
+                    <small>Issued on March 15, 2025</small>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Valid until: <b>March 15, 2027</b></span>
+                        <button class="btn btn-light btn-sm">⬇ Download</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="col">
+                <div class="card text-black bg-certs p-3">
+                    <h5 class="fw-bold">CPR Fundamentals</h5>
+                    <p>Basic Certification</p>
+                    <small>Issued on February 28, 2025</small>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>Valid until: <b>February 28, 2027</b></span>
+                        <button class="btn btn-light btn-sm">⬇ Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

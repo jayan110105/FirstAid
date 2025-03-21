@@ -1,0 +1,51 @@
+body {
+    background-color: #eef2f7; /* Light background */
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.table th {
+    /*background-color: #007bff; /* Bootstrap primary blue */
+    /*color: white;*/
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9; /* Soft gray striping */
+}
+
+h4 {
+    font-weight: bold;
+}
+
+h5 {
+    color: #333;
+}
+
+.text-danger {
+    color: #dc3545 !important; /* Red */
+}
+
+.text-warning {
+    color: #ffc107 !important; /* Yellow */
+}
+
+.text-primary {
+    color: #007bff !important; /* Blue */
+}
+
+.text-success {
+    color: #28a745 !important; /* Green */
+}
+
+.bg-certs {
+    background-color: #FFFFFF;
+}
