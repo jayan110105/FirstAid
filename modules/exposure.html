@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--<title>{% block title %}First Aid Training{% endblock %}</title>!-->
+    <title>First Aid Training</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </head>
+  <body>
+<!-- Main Container -->
+<div class="container mt-4">
+<!--
+{% block title %}Burns and Wounds{% endblock %}
+
+{% block content %}-->
+<h2>Exposure</h2>
+<div class="row">
+  <!-- exposure -->
+  <div class="col-md-6 mb-3">
+    <div class="card">
+      <img
+        src="heat.jpg"
+        class="card-img-top"
+        alt="Burns"
+        height="300"
+        width="200"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Heat</h5>
+        <p class="card-text">Identify and treat patients suffering from prolonged exposure to high temperatures</p>
+        <!-- Links to separate pages for learning and revising 
+        <a href="{% url 'learning' 'burns' %}" class="btn btn-primary">Learning</a>
+        <a href="{% url 'quiz' 'burns' %}" class="btn btn-secondary">Revising</a>-->
+        <a href="heat_learning.html" class="btn btn-primary">Learning</a>
+        <a href="heat_quiz.html" class="btn btn-secondary">Revising</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 mb-3">
+    <div class="card">
+      <img
+        src="cold.png"
+        class="card-img-top"
+        alt="Burns"
+        height="300"
+        width="200"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Cold</h5>
+        <p class="card-text">Identify and treat patients suffering from prolonged exposure to low temperatures</p>
+        <!-- Links to separate pages for learning and revising 
+        <a href="{% url 'learning' 'burns' %}" class="btn btn-primary">Learning</a>
+        <a href="{% url 'quiz' 'burns' %}" class="btn btn-secondary">Revising</a>-->
+        <a href="cold_learning.html" class="btn btn-primary">Learning</a>
+        <a href="cold_quiz.html" class="btn btn-secondary">Revising</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--{% endblock %}-->
+</div>
+</body>
+</html>
