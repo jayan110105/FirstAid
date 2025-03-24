@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--<title>{% block title %}First Aid Training{% endblock %}</title>!-->
+    <title>First Aid Training</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </head>
+  <body>
+<!-- Main Container -->
+<div class="container mt-4">
+<!--{% extends 'base.html' %}
+{% block title %}Training Modules{% endblock %}
+
+{% block content %}-->
+<h1 class="mb-4">Training Modules</h1>
+<div class="row">
+
+  <!-- 1. Burns and Wounds -->
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      <img
+        src="burns_and_wounds.jpg"
+        class="card-img-top"
+        alt="Burns and Wounds"
+        width="300"
+        height="200"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Burns and Wounds</h5>
+        <p class="card-text">
+          Learn how to treat burns and wounds effectively.
+        </p>
+        <!--<a href="{% url 'burns_and_wounds' %}" class="btn btn-primary">Start Module</a>-->
+        <a href="burns_and_wounds.html" class="btn btn-primary">Start Module</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Fractures and Sprains -->
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      <img
+        src="fractures_and_sprains.png"
+        class="card-img-top"
+        alt="Fractures and Sprains"
+        width="300"
+        height="200"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Fractures and Sprains</h5>
+        <p class="card-text">
+          Identify and stabilize fractures and sprains.
+        </p>
+        <!--<a href="#" class="btn btn-primary">Start Module</a>-->
+        <a href="fractures_and_sprains.html" class="btn btn-primary">Start Module</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Cardiac Emergencies -->
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      <img
+        src="cpr.png"
+        class="card-img-top"
+        alt="Cardiac Emergencies"
+        width="300"
+        height="200"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Cardiac Emergencies</h5>
+        <p class="card-text">
+          Handle CPR and heart-related emergencies.
+        </p>
+        <!--<a href="#" class="btn btn-primary">Start Module</a>-->
+        <a href="cardiac_emergencies.html" class="btn btn-primary">Start Module</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Choking -->
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      <img
+        src="choking.png"
+        class="card-img-top"
+        alt="Choking"
+        width="300"
+        height="200"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Choking</h5>
+        <p class="card-text">
+          Learn how to assist someone who is choking.
+        </p>
+        <!--<a href="#" class="btn btn-primary">Start Module</a>-->
+        <a href="choking.html" class="btn btn-primary">Start Module</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Exposure -->
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      <img
+        src="exposure.jpg"
+        class="card-img-top"
+        alt="Exposure"
+        width="300"
+        height="200"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Exposure</h5>
+        <p class="card-text">
+          Recognize and treat heat/cold-related emergencies.
+        </p>
+        <!--<a href="#" class="btn btn-primary">Start Module</a>-->
+        <a href="exposure.html" class="btn btn-primary">Start Module</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Poison/Venom/Allergies -->
+  <div class="col-md-4 mb-3">
+    <div class="card">
+      <img
+        src="poison_venom_allergy_1.png"
+        class="card-img-top"
+        alt="Poison/Venom/Allergies"
+        width="300"
+        height="200"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Poison/Venom/Allergies</h5>
+        <p class="card-text">
+          Handle poisonings, venomous bites, and allergic reactions.
+        </p>
+        <!--<a href="{% url 'poison_venom_allergies' %}" class="btn btn-primary"
+          >Start Module</a
+        >-->
+        <a href="poison_venom_allergy.html" class="btn btn-primary">Start Module</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!--{% endblock %}-->
+</div>
+</body>
+</html>
